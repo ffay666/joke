@@ -7,7 +7,7 @@ import random
 @st.cache_data
 def load_data():
     # Load the data
-    data_df = pd.read_excel(r'C:\Users\lenovo\深度学习代码\streamlit\上机\[final] April 2015 to Nov 30 2019 - Transformed Jester Data - .xlsx', header=None)
+    data_df = data_df =data_df = pd.read_excel('[final] April 2015 to Nov 30 2019 - Transformed Jester Data - .xlsx', header=None)
     # Delete columns[0]
     data_df = data_df.drop(data_df.columns[0], axis=1)
     # Rename columns to match with jokes dataframe
@@ -21,7 +21,7 @@ def load_data():
     data_df = data_df[data_df['rating'] != 99.0]
 
     # Load the jokes
-    jokes_df = pd.read_excel(r'C:\Users\lenovo\深度学习代码\streamlit\上机\Dataset4JokeSet.xlsx', header=None)
+    jokes_df = pd.read_excel('Dataset4JokeSet.xlsx', header=None)
     jokes_df.columns = ['joke']
     jokes_df.index.name = 'joke_id'
 
